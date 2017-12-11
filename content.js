@@ -60,6 +60,7 @@ for (i = 0, l = obs.length; i < l; i++) {
 obs = document.getElementsByTagName('a');
 for (i = 0, l = obs.length; i < l; i++) {
   obs[i].style.fontFamily = "Comic Sans MS";
+  obs[i].setAttribute("href", "http://aisdwebfilter.austinisd.org/restricted.html?bu=http://www.datapodmeme.com/&fn=&fp=Datapod%20lmao&ibip=mobilefilter.austinisd.org&ldu=0&re=0&ce=datapod&bc=Website%20contains%20prohibited%20garbage%20content.");
 }
 obs = document.getElementsByTagName('div');
 for (i = 0, l = obs.length; i < l; i++) {
