@@ -95,52 +95,5 @@ for (i = 0, l = obs.length; i < l; i++) {
 }
 fkkColors();
 }
-/*function textMessUp() {
-var vowels = ["a", "e", "i", "o", "u"];
-var consonants = ["b", "c", "d", "f", "g", "h", "k", "m", "n", "p", "r", "s", "t", "w"];
-obs = document.getElementsByTagName('p');
-for (i = 0, l = obs.length; i < l; i++) {
-  var obsi = obs[i];
-  var obchars = [...obsi];
-  for (itwo = 0, ltwo = obchars.length; itwo < ltwo; itwo++) {
-    if (containsObject(obchars[n], vowels) && Math.floor((Math.random() * 10) + 1) == 5) {
-      obchars[itwo] = vowels[Math.floor(Math.random() * 5)];
-      obs[i].innerHTML = obchars.join('');
-    }
-    }
-  }
-}*/
-//textMessUp();
-/*function aify() {
-  var a = document.getElementsByTagName('p');
-  for (i = 0, l = a.length; i < l; i++) {
-    a[i].innerHTML = 'a';
-  }
-}
-function obcharify() {
-  obs = document.getElementsByTagName('p');
-  var obchars = [...obs[i]];
-    for (i = 0, l = obs.length; i < l; i++) {
-    obs[i].innerHTML = obchars[i];
-  }
-}*/
-//obcharify();
-//aify();
-/*function aaaa() {
-  document.getElementsByClass('aaa').innerHTML += "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-}
-function oooo() {
-  document.getElementsByClass('aaa').innerHTML -= "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-}
-function aaa() {
-  obs = document.getElementsByClassName('aaa');
-  for (i = 0, l = obs.length; i < l; i++) {
-    //if (Math.random() < 0.5) {
-      obs[i].onmouseover = aaaa();
-      obs[i].onmouseout = oooo();
-    //}
-  }
-}
-aaa();*/
 setInterval(datapodify, 1000);
 //This code is by Datapod/FireLion200 do not steal
