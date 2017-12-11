@@ -1,0 +1,146 @@
+var obs = document.getElementsByTagName('div');
+for (var i = 0, l = obs.length; i < l; i++) {
+  if (/*Math.random() < 0.5 && */obs[i].id != 'datapodtxt') {
+    obs[i].className += " kms";
+  }
+}
+var obs = document.getElementsByTagName('p');
+for (var i = 0, l = obs.length; i < l; i++) {
+  if (/*Math.random() < 0.5 && */obs[i].id != 'datapodtxt') {
+    obs[i].className += " kmsalso";
+  }
+}
+var obs = document.getElementsByTagName('p');
+for (var i = 0, l = obs.length; i < l; i++) {
+  if (/*Math.random() < 0.5 && */obs[i].id != 'datapodtxt') {
+    obs[i].className += " aaa";
+  }
+}
+function containsObject(obj, list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+        if (list[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+function fkkColors() {
+  obs = document.getElementsByClassName('kms');
+for (var i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.color="rgb("+Math.floor(Math.random()*128)+", 255, " + Math.floor(Math.random()*128) + ")";
+}
+  obs = document.getElementsByClassName('kmsalso');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.color="rgb("+Math.floor(Math.random()*128)+", 255, " + Math.floor(Math.random()*128) + ")";
+  obs[i].style.backgroundColor = 'black';
+}
+}
+function datapodify() {
+obs = document.getElementsByTagName('img');
+for (i = 0, l = obs.length; i < l; i++) {
+  if (obs[i].id != 'datapodimg') {
+  var height = obs[i].height;
+  var width = obs[i].width;
+  obs[i].src = "https://marcgilpin.files.wordpress.com/2013/01/datapod.jpg";
+  obs[i].height = height;
+  obs[i].width = width;
+  }
+}
+obs = document.getElementsByTagName('body');
+for (i = 0, l = obs.length; i < l; i++) {
+  if (obs[i].id != 'databody') {
+  obs[i].style.backgroundImage = 'url(https://marcgilpin.files.wordpress.com/2013/01/datapod.jpg)';
+}
+}
+obs = document.getElementsByTagName('p');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('a');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('div');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('span');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('h1');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('h2');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('h3');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('h4');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('h5');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+obs = document.getElementsByTagName('h6');
+for (i = 0, l = obs.length; i < l; i++) {
+  obs[i].style.fontFamily = "Comic Sans MS";
+}
+fkkColors();
+}
+/*function textMessUp() {
+var vowels = ["a", "e", "i", "o", "u"];
+var consonants = ["b", "c", "d", "f", "g", "h", "k", "m", "n", "p", "r", "s", "t", "w"];
+obs = document.getElementsByTagName('p');
+for (i = 0, l = obs.length; i < l; i++) {
+  var obsi = obs[i];
+  var obchars = [...obsi];
+  for (itwo = 0, ltwo = obchars.length; itwo < ltwo; itwo++) {
+    if (containsObject(obchars[n], vowels) && Math.floor((Math.random() * 10) + 1) == 5) {
+      obchars[itwo] = vowels[Math.floor(Math.random() * 5)];
+      obs[i].innerHTML = obchars.join('');
+    }
+    }
+  }
+}*/
+//textMessUp();
+/*function aify() {
+  var a = document.getElementsByTagName('p');
+  for (i = 0, l = a.length; i < l; i++) {
+    a[i].innerHTML = 'a';
+  }
+}
+function obcharify() {
+  obs = document.getElementsByTagName('p');
+  var obchars = [...obs[i]];
+    for (i = 0, l = obs.length; i < l; i++) {
+    obs[i].innerHTML = obchars[i];
+  }
+}*/
+//obcharify();
+//aify();
+/*function aaaa() {
+  document.getElementsByClass('aaa').innerHTML += "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+}
+function oooo() {
+  document.getElementsByClass('aaa').innerHTML -= "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+}
+function aaa() {
+  obs = document.getElementsByClassName('aaa');
+  for (i = 0, l = obs.length; i < l; i++) {
+    //if (Math.random() < 0.5) {
+      obs[i].onmouseover = aaaa();
+      obs[i].onmouseout = oooo();
+    //}
+  }
+}
+aaa();*/
+setInterval(datapodify, 1000);
+//This code is by Datapod/FireLion200 do not steal
