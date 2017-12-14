@@ -10,12 +10,6 @@ for (var i = 0, l = obs.length; i < l; i++) {
     obs[i].className += " kmsalso";
   }
 }
-var obs = document.getElementsByTagName('p');
-for (var i = 0, l = obs.length; i < l; i++) {
-  if (/*Math.random() < 0.5 && */obs[i].id != 'datapodtxt') {
-    obs[i].className += " aaa";
-  }
-}
 var obs = document.getElementsByTagName('a');
 for (var i = 0, l = obs.length; i < l; i++) {
 obs[i].setAttribute("href", "http://aisdwebfilter.austinisd.org/restricted.html?bu=" + obs[i].href + "&fn=&fp=Datapod%20lmao&ibip=mobilefilter.austinisd.org&ldu=0&re=0&ce=datapod&bc=Website%20contains%20prohibited%20garbage%20content.");
