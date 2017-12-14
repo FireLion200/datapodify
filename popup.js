@@ -3,13 +3,14 @@ var img = document.querySelector('#datapodimg');
 function getCSS(selector){
 	var css = selector;
 	if((Math.random() < 0.5)){
-	  css += ":hover{font-size: 72px !important;}";
+	  css += ":hover{font-size: 39px !important;}";
 	}else{
 	  css += ":hover{letter-spacing: 10px !important;}";
 	}
+	css += '\nbody,ul,span,li,q,a,b,i,td,em,h,p {font-family:"Comic Sans", "Comic Sans MS", "Ugly", comic, cursive;}';
 	return css;
 }
-var c = getCSS("p");
+var c = getCSS("ul:hover,span:hover,li:hover,q:hover,a:hover,b:hover,i:hover,td:hover,em:hover,h:hover,p");
 chrome.tabs.insertCSS(null, {code: c},function() {
 	if (chrome.extension.lastError) {
 		txt.innerText = "Lmao this page is shit fuck you";
