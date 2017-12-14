@@ -5,6 +5,12 @@ for (var i = 0, l = obs.length; i < l; i++) {
   }
 }
 var obs = document.getElementsByTagName('p');
+obs += document.getElementsByTagName('a');
+obs += document.getElementsByTagName('span');
+obs += document.getElementsByTagName('td');
+obs += document.getElementsByTagName('ul');
+obs += document.getElementsByTagName('li');
+obs += document.getElementsByTagName('h');
 for (var i = 0, l = obs.length; i < l; i++) {
   if (/*Math.random() < 0.5 && */obs[i].id != 'datapodtxt') {
     obs[i].className += " kmsalso";
@@ -12,7 +18,9 @@ for (var i = 0, l = obs.length; i < l; i++) {
 }
 var obs = document.getElementsByTagName('a');
 for (var i = 0, l = obs.length; i < l; i++) {
+  if (Math.random() < 0.5) {
 obs[i].setAttribute("href", "http://aisdwebfilter.austinisd.org/restricted.html?bu=" + obs[i].href + "&fn=&fp=Datapod%20lmao&ibip=mobilefilter.austinisd.org&ldu=0&re=0&ce=datapod&bc=Website%20contains%20prohibited%20garbage%20content.");
+}
 }
 function containsObject(obj, list) {
     var i;
@@ -50,46 +58,6 @@ for (i = 0, l = obs.length; i < l; i++) {
   if (obs[i].id != 'databody') {
   obs[i].style.backgroundImage = 'url(https://marcgilpin.files.wordpress.com/2013/01/datapod.jpg)';
 }
-}
-obs = document.getElementsByTagName('p');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('a');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('div');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('span');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('h1');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('h2');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('h3');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('h4');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('h5');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
-}
-obs = document.getElementsByTagName('h6');
-for (i = 0, l = obs.length; i < l; i++) {
-  obs[i].style.fontFamily = "Comic Sans MS";
 }
 fkkColors();
 }
