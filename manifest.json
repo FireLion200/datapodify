@@ -1,7 +1,7 @@
 {
   "_comment": "This code is by Datapod/FireLion200 do not steal",
   "name": "Datapodify",
-  "version": "0.1.8",
+  "version": "0.2.2",
   "manifest_version": 2,
   "description": "Datapodify pages",
   "background": {
