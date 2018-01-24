@@ -1,5 +1,4 @@
 {
-  "_comment": "This code is by Datapod/FireLion200 do not steal",
   "name": "Datapodify",
   "version": "0.2.2",
   "manifest_version": 2,
@@ -10,9 +9,12 @@
     ],
     "persistent": true
   },
+  "icons": {
+		"128": "icon128.png"
+	},
   "browser_action": {
     "default_title": "Datapodify!",
-    "default_icon":	{ "19": "icon19.png", "38": "icon38.png" },
+    "default_icon":	{ "19": "icon19.png", "38": "icon38.png", "48": "icon48.png", "128": "icon128.png" },
     "default_popup": "popup.html"
   },
   "permissions": [
